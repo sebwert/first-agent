@@ -1,0 +1,145 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+htmlcov/
+.tox/
+.nox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# LangChain specific
+.langchain/
+.langsmith/
+runs/
+artifacts/
+
+# MCP/Agent specific
+mcp_logs/
+agent_memory/
+*.db
+*.sqlite
+*.sqlite3
+
+# Model files (if storing locally)
+models/
+*.bin
+*.onnx
+*.pt
+*.pth
+*.h5
+*.safetensors
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+.cache/
+
+# UV/pip
+.uv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Documentation
+docs/_build/
+site/
+
+# Secrets and credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.cert
+*.p12
+
+# Data files (customize as needed)
+data/
+*.csv
+*.json
+*.parquet
+# But track example data
+!data/examples/
+!data/examples/*
+
+# Output files
+output/
+results/
+exports/
