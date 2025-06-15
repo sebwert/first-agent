@@ -96,6 +96,7 @@ agent_memory/
 *.db
 *.sqlite
 *.sqlite3
+models.json
 
 # Model files (if storing locally)
 models/

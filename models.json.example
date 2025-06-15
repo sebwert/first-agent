@@ -1,0 +1,21 @@
+{
+    "your-model-name": {
+        "class_name": "ChatOllama",
+        "kwargs": {
+            "model": "your-actual-model-name",
+            "temperature": 0.0,
+            "num_ctx": 40000,
+            "base_url": "http://localhost:11434"
+        }
+    },
+    "your-thinking-model": {
+        "class_name": "ChatOllama",
+        "kwargs": {
+            "model": "your-thinking-model-name",
+            "temperature": 0.0,
+            "num_ctx": 12000,
+            "think": true,
+            "base_url": "http://localhost:11435"
+        }
+    }
+}

@@ -1,15 +1,19 @@
 [project]
-name = "langchain-mcp-agent"
+name = "langchain_mcp_agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "browser-use[all,memory]",
+    "fastmcp>=2.8.0",
     "langchain>=0.3.25",
-    "langchain-community>=0.3.25",
-    "langchain-core>=0.3.65",
-    "langchain-huggingface>=0.3.0",
+    "langchain-community>=0.3.24",
+    "langchain-core>=0.3.64",
+    "langchain-huggingface>=0.2.0",
+    "langchain-mcp-adapters>=0.1.7",
     "langchain-ollama>=0.3.3",
+    "langgraph>=0.4.8",
     "mcp>=1.9.4",
     "python-dotenv>=1.1.0",
     "torch>=2.7.1",
@@ -18,12 +22,14 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "langchain-mcp-agent",
     "mypy>=1.16.0",
     "pytest>=8.4.0",
     "pytest-asyncio>=1.0.0",
     "pytest-cov>=6.2.1",
     "ruff>=0.11.13",
 ]
+
 
 [tool.ruff]
 line-length = 88
@@ -53,4 +59,9 @@ ignore_missing_imports = true
 [tool.bandit]
 exclude_dirs = ["tests", "venv", ".venv"]
 skips = ["B101"]  # assert_used
+
+
+
+[tool.uv.sources]
+browser-use = { path = "../../browser-use", editable = true }
 
